@@ -1,22 +1,27 @@
 #flexContainer {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
     /* Default: side-by-side columns */
   }
   
   .box {
     /* border: 1px solid #ccc; */
     margin-right: 10px;
-    flex-basis: 600px;
+    flex-basis: 40vw;
     background-color: white;
   }
 
   h2,
   p {
   color: black;
+  text-align: center;
   }
 
   #BizviewHelp {
     color: white;
+    margin-top: 1vw;
   }
 
   .row {
@@ -29,7 +34,8 @@
 
   .image {
     max-width: 30%;
-    max-height: 50px;
+    /* max-height: 50px; */
+    height: 50px;
     margin-right: 20px;
   }
 
@@ -40,6 +46,7 @@
       width: 100%;
       justify-content: center;
       width: 100%;
+      margin-top: 20px;
     }    
     .box  {
       margin-bottom: 20px;
