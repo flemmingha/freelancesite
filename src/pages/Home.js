@@ -4,7 +4,7 @@ import './Home.css'; // Create a CSS file for styling
 const Home = () => {
   return (
     <div>
-        <p id='BizviewHelp'>Bizview can assist with</p>
+        <h1 id='BizviewHelp'>Competencies</h1>
         <div id="flexContainer">
             <div className='box'>
                 <h2>IT</h2>

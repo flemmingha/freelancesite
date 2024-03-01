@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 70px;
     /* Default: side-by-side columns */
   }
   
@@ -20,8 +20,9 @@
   }
 
   #BizviewHelp {
-    color: white;
     margin-top: 1vw;
+    text-align: center;
+    color: var(--first-color);
   }
 
   .row {
@@ -54,5 +55,12 @@
       flex-grow: 1;
       flex-basis: 400px;
     }
+    #BizviewHelp {
+      margin-top: 1vw;
+      text-align: center;
+      color: var(--first-color);
+      font-size: 5vw;
+    }
+
   }
   

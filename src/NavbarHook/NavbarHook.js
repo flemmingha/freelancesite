@@ -30,6 +30,8 @@ const NavbarHook = () => {
             Home
           </NavLink>
         </li>
+        
+        {/*
         <li>
           <NavLink
             to="/news"
@@ -39,15 +41,18 @@ const NavbarHook = () => {
             News
           </NavLink>
         </li>
+        */}
+        
         <li>
           <NavLink
             to="/about-us"
             className={linkClassName}
             onClick={closeMobileMenu}
           >
-            About Us
+            About
           </NavLink>
         </li>
+        {/*
         <li>
           <NavLink
             to="/favorite"
@@ -66,13 +71,14 @@ const NavbarHook = () => {
             Location
           </NavLink>
         </li>
+        */}
         <li>
           <NavLink
             to="/get-started"
             className={`${linkClassName} ${buttonClassName}`}
             onClick={closeMobileMenu}
           >
-            Get Started
+            Contact
           </NavLink>
         </li>
       </ul>
@@ -82,8 +88,10 @@ const NavbarHook = () => {
   return (
     <header className="header">
       <nav className="nav container">
+        <img className='image' src={`${process.env.PUBLIC_URL}/bizview_logo.jpg`} alt="Bizview Logo" />
+        <h1 className="nav__logo">Bizview</h1>
         <NavLink to="/" className="nav__logo">
-          Navigation Bar
+          <h1></h1>
         </NavLink>
 
         {isMobile && (

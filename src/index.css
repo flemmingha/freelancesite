@@ -14,7 +14,9 @@
   --body-color: hsl(0, 0%, 6%);
   --body-font: "Montserrat", sans-serif;
   --second-font: "Dancing Script", cursive;
-  --h2-font-size: 1.25rem;
+  --third-font: "Roboto"
+  --h1-font-size: 2rem;
+  --h2-font-size: 2rem;
   --small-font-size: 0.813rem;
   --font-semi-bold: 600;
   --z-tooltip: 10;
