@@ -1,0 +1,51 @@
+#flexContainer {
+    display: flex;
+    /* Default: side-by-side columns */
+  }
+  
+  .box {
+    /* border: 1px solid #ccc; */
+    margin-right: 10px;
+    flex-basis: 600px;
+    background-color: white;
+  }
+
+  h2,
+  p {
+  color: black;
+  }
+
+  #BizviewHelp {
+    color: white;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    /* Optional: Add more styling for spacing, alignment, etc. */
+  }
+
+  .image {
+    max-width: 30%;
+    max-height: 50px;
+    margin-right: 20px;
+  }
+
+   /* Media query for mobile devices */
+  @media (max-width: 1100px) {
+    #flexContainer {
+      flex-direction: column; /* Stacks columns vertically on mobile */
+      width: 100%;
+      justify-content: center;
+      width: 100%;
+    }    
+    .box  {
+      margin-bottom: 20px;
+      width: 100%;
+      flex-grow: 1;
+      flex-basis: 400px;
+    }
+  }
+  
