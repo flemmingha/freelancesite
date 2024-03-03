@@ -6,7 +6,7 @@
     /* Default: side-by-side columns */
   }
   
-  .box   {
+  .box2   {
     /* border: 1px solid #ccc; */
     margin-right: 10px;
     flex-basis: 40vw;
@@ -58,7 +58,7 @@
       width: 100%;
       margin-top: 20px;
     }    
-    .box  {
+    .box2  {
       margin-bottom: 20px;
       width: 100%;
       flex-grow: 1;

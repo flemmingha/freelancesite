@@ -6,7 +6,7 @@ const Contact = () => {
     <div>
         <h1 id='BizviewHelp'>Contact</h1>
         <div id="flexContainer">
-            <div className='box'>
+            <div className='box4'>
                   <p>Tel: +45 20 89 40 86</p>
                   <br></br>
                   <p>Mail: flemming_ha@hotmail.com</p>

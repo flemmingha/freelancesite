@@ -43,21 +43,25 @@ const Home = () => {
                         </div>
                     <p>Clinical Studies</p>
                         <div className='row'>
-                            <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/ClinicalDataICHLogo.jpg`} alt="ICH Logo" />
+                            <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/ClinicalDataICHLogo.png`} alt="ICH Logo" />
                             <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/ClinicalDataCDISCLogo.png`} alt="CDISC Logo" />
-                            <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/ClinicalDataMedDRALogo.jpg`} alt="MedDRA Logo" />
+                            <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/ClinicalDataMedDRALogo.png`} alt="MedDRA Logo" />
                         </div>
                     <p>Validation</p>
                         <div className='row'>
-                            <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/ValidationGAMP5Logo.jpg`} alt="GAMP5 Logo" />
+                            <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/ValidationGAMP5Logo.png`} alt="GAMP5 Logo" />
                             <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/ValidationHPALMLogo.png`} alt="HPALM Logo" />
                             <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/ValidationDocuSignLogo.png`} alt="DocuSign Logo" />
                         </div>
                     <p>Medical knowledge</p>
                         <div className='row'>
-                            <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/MedicalKnowledgeAAULogo.jpg`} alt="AAU Logo" />
+                            <img className='image' id="aau" src={`${process.env.PUBLIC_URL}/MainImages/MedicalKnowledgeAAULogo.png`} alt="AAU Logo" />
+                            {/*                            
+                            <p>Oncology</p>
+                            <p>Diabetes</p>
                             <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/MedicalKnowledgeOncologyLogo.jpg`} alt="Oncology Logo" />
                             <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/MedicalKnowledgeDiabetesLogo.png`} alt="Diabetes Logo" />
+                            */}
                         </div>
             </div>
         </div>

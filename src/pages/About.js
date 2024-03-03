@@ -6,7 +6,7 @@ const About = () => {
     <div>
         <h1 id='BizviewHelp'>About</h1>
         <div id="flexContainer">
-            <div className='box'>
+            <div className='box2'>
               <div>
               <h2>Flemming Hein Andersen, Founder</h2>
               <br></br>

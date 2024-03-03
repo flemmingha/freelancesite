@@ -7,10 +7,11 @@
   }
   
   .box {
-    /* border: 1px solid #ccc; */
-    margin-right: 10px;
+    border: 1px solid var(--line-color);
+    margin: 10px;
+    padding: 20px;
     flex-basis: 40vw;
-    background-color: white;
+    background-color: var(--box-color);
   }
 
   h2,
@@ -37,7 +38,13 @@
     max-width: 30%;
     /* max-height: 50px; */
     height: 50px;
-    margin-right: 20px;
+    margin-right: 20px;;
+  }
+
+  #aau {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
    /* Media query for mobile devices */

@@ -6,7 +6,7 @@ const Join = () => {
     <div>
         <h1 id='BizviewHelp'>Join</h1>
         <div id="flexContainer">
-            <div className='box'>
+            <div className='box3'>
                   <p>Do you like consulting, data and pharma?</p>
                   <br></br>
                   <p>Would you like to join a start-up consulting company which works in the intersection between IT and pharma?</p>
