@@ -5,6 +5,8 @@ import Navbar from "./Navbar/Navbar";
 import NavbarHook from "./NavbarHook/NavbarHook";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Join from "./pages/Join";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -15,7 +17,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
-          {/* <Route path="/Contact" element={<Contact />} /> */}
+          <Route path="/Join" element={<Join />} />
+          <Route path="/Contact" element={<Contact />} />
           {/* Define other routes that you need*/}
         </Routes>
       </main>

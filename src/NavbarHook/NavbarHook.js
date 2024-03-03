@@ -62,19 +62,19 @@ const NavbarHook = () => {
             Join
           </NavLink>
         </li>
-        <li>
-          <NavLink
-            to="/location"
-            className={linkClassName}
-            onClick={closeMobileMenu}
-          >
-            Location
-          </NavLink>
-        </li>
         */}
         <li>
           <NavLink
-            to="/get-started"
+            to="/Join"
+            className={linkClassName}
+            onClick={closeMobileMenu}
+          >
+            Join
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/Contact"
             className={`${linkClassName} ${buttonClassName}`}
             onClick={closeMobileMenu}
           >

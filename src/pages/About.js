@@ -7,14 +7,17 @@ const About = () => {
         <h1 id='BizviewHelp'>About</h1>
         <div id="flexContainer">
             <div className='box'>
+              <div>
               <h2>Flemming Hein Andersen, Founder</h2>
-                <p>Flemming is the founder of Bizview. He previously worked for a range of pharma companies in Denmark and for various companies in Switzerland primarily as a consultant.
+              <br></br>
+                <p>Flemming is the founder of Bizview. He previously worked for a range of pharmaceutical companies in Denmark and for various companies in Switzerland primarily as a consultant.
                    He holds a M.Sc. in International Business & Finance from the University of Aarhus, a B.Sc. in Medicine with Industrial Specialization from the University of Aalborg 
                    and various certifications from Microsoft and Snowflake</p>
                 <br></br>
                 <br></br>
                 <br></br>
                 <br></br>
+                </div>
                   <div id="certifications">
                     <h2>Certifications</h2>
                     <br></br>
