@@ -88,7 +88,7 @@ const NavbarHook = () => {
   return (
     <header className="header">
       <nav className="nav container">
-        <img className='image' src={`${process.env.PUBLIC_URL}/bizview_logo.jpg`} alt="Bizview Logo" />
+        {/* <img className='image' src={`${process.env.PUBLIC_URL}/bizview_logo.jpg`} alt="Specto Consult Logo" /> */}
         <h1 className="nav__logo">Specto Consult</h1>
         <NavLink to="/" className="nav__logo">
           <h1></h1>

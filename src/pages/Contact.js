@@ -19,14 +19,6 @@ const Contact = () => {
                   <p>2500 Valby, Denmark</p>
             </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="100">
-  
-  <rect x="0" y="0" width="120" height="120" fill="#FFA500" />
-  
-  <text x="30" y="60" font-family="Arial" font-size="40" fill="#000000">S</text>
-  
-  <text x="90" y="60" font-family="Arial" font-size="40" fill="#000000">C</text>
-</svg>
     </div>
 
   );
