@@ -28,7 +28,7 @@
     /* Default: side-by-side columns */
   }
 
-  #BizviewHelp {
+  #SpectoConsultHelp {
     margin-top: 1vw;
     text-align: center;
     color: var(--first-color);
@@ -64,7 +64,7 @@
       flex-grow: 1;
       flex-basis: 400px;
     }
-    #BizviewHelp {
+    #SpectoConsultHelp {
       margin-top: 1vw;
       text-align: center;
       color: var(--first-color);

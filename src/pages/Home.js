@@ -4,10 +4,11 @@ import './Home.css'; // Create a CSS file for styling
 const Home = () => {
   return (
     <div>
-        <h1 id='BizviewHelp'>Competencies</h1>
+        <h1 id='SpectoConsultHelp'>Competencies</h1>
         <div id="flexContainer">
             <div className='box'>
                 <h2>IT</h2>
+                    <br></br>
                     <p>Data Engineering</p>
                         <div className='row'>
                             <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/DataEngineeringAzureLogo.png`} alt="Azure Logo" />
@@ -24,7 +25,8 @@ const Home = () => {
                         <div className='row'>
                             <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/DataScienceAzureMLLogo.png`} alt="Azure ML Logo" />
                             <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/DataScienceTensorflowLogo.png`} alt="Tensorflow Logo" />
-                            <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/DataSciencePandasLogo.png`} alt="Pandas Logo" />
+                            <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/DataSciencePythonLogo.png`} alt="Python Logo" />
+                            {/* <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/DataSciencePandasLogo.png`} alt="Pandas Logo" /> */}
                         </div>
                     <p>Web Development</p>
                         <div className='row'>
@@ -35,6 +37,7 @@ const Home = () => {
             </div>
             <div className='box'>
                 <h2>Pharma</h2>
+                    <br></br>
                     <p>Clinical Systems</p>
                         <div className='row'>
                             <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/ClinicalSystemsVeevaVaultRimLogo.png`} alt="Veeva Logo" />
@@ -43,15 +46,15 @@ const Home = () => {
                         </div>
                     <p>Clinical Studies</p>
                         <div className='row'>
-                            <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/ClinicalDataICHLogo.png`} alt="ICH Logo" />
+                             <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/ClinicalDataICHLogo.png`} alt="ICH Logo" /> 
                             <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/ClinicalDataCDISCLogo.png`} alt="CDISC Logo" />
                             <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/ClinicalDataMedDRALogo.png`} alt="MedDRA Logo" />
                         </div>
                     <p>Validation</p>
                         <div className='row'>
-                            <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/ValidationGAMP5Logo.png`} alt="GAMP5 Logo" />
-                            <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/ValidationHPALMLogo.png`} alt="HPALM Logo" />
-                            <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/ValidationDocuSignLogo.png`} alt="DocuSign Logo" />
+                            <img className='image' id="GAMP5" src={`${process.env.PUBLIC_URL}/MainImages/ValidationGAMP5Logo.png`} alt="GAMP5 Logo" />
+                            <img className='image' id="HPALM" src={`${process.env.PUBLIC_URL}/MainImages/ValidationHPALMLogo.png`} alt="HPALM Logo" />
+                            {/* <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/ValidationDocuSignLogo.png`} alt="DocuSign Logo" /> */}
                         </div>
                     <p>Medical knowledge</p>
                         <div className='row'>
