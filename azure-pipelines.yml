@@ -6,7 +6,7 @@
 trigger:
 - main
 
-pool: OwnComputer
+pool: Default
 
 steps:
 - task: NodeTool@0
