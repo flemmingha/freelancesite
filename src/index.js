@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 
 process.env.CI = "false";
 
+app.use(express.static(path.resolve(__dirname, '../client/build')));
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
