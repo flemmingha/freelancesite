@@ -2,7 +2,7 @@
   "name": "navbar",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:5000",
+  "proxy": "http://localhost:3000",
   "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^6.4.2",
