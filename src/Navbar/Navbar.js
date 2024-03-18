@@ -19,7 +19,7 @@ const Navbar = () => {
     <header className="header">
       <nav className="nav container">
         <NavLink to="/" className="nav__logo">
-          Navigation Bar
+          Specto Consult
         </NavLink>
 
         <div
@@ -41,16 +41,17 @@ const Navbar = () => {
                 About
               </NavLink>
             </li>
-             {/*
+             
             <li className="nav__item">
               <NavLink
-                to="/about-us"
+                to="/join"
                 className="nav__link"
                 onClick={closeMenuOnMobile}
               >
-                About Us
+                Join
               </NavLink>
             </li>
+            {/*
             <li className="nav__item">
               <NavLink
                 to="/favorite"
@@ -71,8 +72,8 @@ const Navbar = () => {
             </li>
             */}
             <li className="nav__item">
-              <NavLink to="/get-started" className="nav__link nav__cta">
-                Get Started
+              <NavLink to="/contact" className="nav__link nav__cta">
+                Contact
               </NavLink>
             </li>
           </ul>
