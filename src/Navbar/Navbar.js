@@ -51,16 +51,16 @@ const Navbar = () => {
                 Join
               </NavLink>
             </li>
-            {/*
             <li className="nav__item">
               <NavLink
-                to="/favorite"
+                to="/contact"
                 className="nav__link"
                 onClick={closeMenuOnMobile}
               >
-                Favorite
+                Contact
               </NavLink>
             </li>
+            {/*
             <li className="nav__item">
               <NavLink
                 to="/location"
@@ -70,12 +70,12 @@ const Navbar = () => {
                 Location
               </NavLink>
             </li>
-            */}
             <li className="nav__item">
               <NavLink to="/contact" className="nav__link nav__cta">
                 Contact
               </NavLink>
             </li>
+            */}
           </ul>
           <div className="nav__close" id="nav-close" onClick={toggleMenu}>
             <IoClose />
