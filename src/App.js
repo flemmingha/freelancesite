@@ -13,7 +13,31 @@ import CookieConsent from './Components/CookieConsent/CookieConsent';
 import CookiePolicy from './Components/pages/CookiePolicy';
 
 
+const useGoogleAnalytics = (trackingId) => {
+  useEffect(() => {
+    // Define dataLayer
+    window.dataLayer = window.dataLayer || [];
+    
+    // Define gtag function
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    window.gtag = gtag;
+
+    // Load gtag.js script
+    const scriptTag = document.createElement('script');
+    scriptTag.async = true;
+    scriptTag.src = `https://www.googletagmanager.com/gtag/js?id=${trackingId}`;
+    document.head.appendChild(scriptTag);
+
+    // Set initial config for Google Analytics
+    gtag('js', new Date());
+    gtag('config', trackingId);
+  }, [trackingId]);
+};
+
 const App = () => {
+  useGoogleAnalytics('G-19DN8SNDPS');
   const [userName, setUserName] = useState('');
 
   useEffect(() => {
