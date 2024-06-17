@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Cookies from 'js-cookie';
+import { v4 as uuidv4 } from 'uuid'; // Import the UUID library
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
@@ -19,9 +20,10 @@ const App = () => {
     const userCookie = Cookies.get('user');
 
     if (!userCookie) {
-      Cookies.set('user', 'John Doe', { expires: 7 });
-      setUserName('John Doe');
-      console.log('Cookie set for the first time');
+      const newUserName = uuidv4(); // Generate a new UUID
+      Cookies.set('user', newUserName, { expires: 7 });
+      setUserName(newUserName);
+      console.log('Cookie set for the first time:', newUserName);
     } else {
       setUserName(userCookie);
       console.log('Cookie already exists:', userCookie);
