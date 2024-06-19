@@ -9,6 +9,7 @@ import Home from "./Components/pages/Home";
 import About from "./Components/pages/About";
 import Join from "./Components/pages/Join";
 import Contact from "./Components/pages/Contact";
+import ContactForm from "./Components/ContactForm/ContactForm";
 import CookieConsent from './Components/CookieConsent/CookieConsent';
 import CookiePolicy from './Components/pages/CookiePolicy';
 
@@ -65,7 +66,8 @@ const App = () => {
           <Route path="/About" element={<About />} />
           <Route path="/Join" element={<Join />} />
           <Route path="/Contact" element={<Contact />} />
-          <Route path="/cookie-policy" element={<CookiePolicy />} />          
+          <Route path="/cookie-policy" element={<CookiePolicy />} />
+          <Route path="/contact-form" element={<ContactForm />} />          
           {/* Define other routes that you need*/}
         </Routes>
         <CookieConsent />

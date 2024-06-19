@@ -60,6 +60,15 @@ const Navbar = () => {
                 Contact
               </NavLink>
             </li>
+            <li className="nav__item">
+              <NavLink
+                to="/contactform"
+                className="nav__link"
+                onClick={closeMenuOnMobile}
+              >
+                Contact
+              </NavLink>
+            </li>
             {/*
             <li className="nav__item">
               <NavLink
