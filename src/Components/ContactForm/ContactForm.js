@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './ContactForm.css'; // Import the Contact CSS file
+import './ContactForm.css'; // Ensure this CSS file styles your form
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -21,9 +21,14 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3000/api/contact', formData);
+            const response = await axios.post('http://localhost:3000/api/contact', formData, {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
             setSuccessMessage(response.data.message);
             setErrorMessage('');
+            setFormData({ name: '', email: '', phone: '', message: '' }); // Reset form after successful submission
         } catch (error) {
             setErrorMessage('There was an error submitting the form. Please try again.');
             setSuccessMessage('');
