@@ -65,7 +65,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Join" element={<Join />} />
-          <Route path="/Contact" element={<Contact />} />
+          {/*<Route path="/Contact" element={<Contact />} /> */}
           <Route path="/cookie-policy" element={<CookiePolicy />} />
           <Route path="/contact-form" element={<ContactForm />} />          
           {/* Define other routes that you need*/}

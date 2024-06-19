@@ -1,8 +1,8 @@
-// ContactForm.js
 import React, { useState } from 'react';
 import axios from 'axios';
+import './ContactForm.css'; // Import the Contact CSS file
 
-const ContactForm = () => {
+const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -10,85 +10,79 @@ const ContactForm = () => {
         message: ''
     });
 
+    const [successMessage, setSuccessMessage] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
+
     const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
         try {
-            const response = await axios.post('http://localhost:5000/api/contact', formData);
-            console.log('Form submission successful:', response.data);
-
-            // Reset form fields
-            setFormData({
-                name: '',
-                email: '',
-                phone: '',
-                message: ''
-            });
-
-            // Optionally, display a success message to the user
-            alert('Form submitted successfully!');
+            const response = await axios.post('http://localhost:3000/api/contact', formData);
+            setSuccessMessage(response.data.message);
+            setErrorMessage('');
         } catch (error) {
-            console.error('Form submission error:', error);
-            // Handle error, e.g., display an error message to the user
-            alert('An error occurred while submitting the form. Please try again later.');
+            setErrorMessage('There was an error submitting the form. Please try again.');
+            setSuccessMessage('');
         }
     };
 
     return (
-        <div className="contact-form">
-            <h2>Contact Us</h2>
+        <div className="contact-form-container">
+            <h1>Contact Us</h1>
+            {successMessage && <p className="success-message">{successMessage}</p>}
+            {errorMessage && <p className="error-message">{errorMessage}</p>}
             <form onSubmit={handleSubmit}>
-                <label>
-                    Name:
+                <div className="form-group">
+                    <label htmlFor="name">Name:</label>
                     <input
                         type="text"
+                        id="name"
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
                         required
                     />
-                </label>
-                <br />
-                <label>
-                    Email:
+                </div>
+                <div className="form-group">
+                    <label htmlFor="email">Email:</label>
                     <input
                         type="email"
+                        id="email"
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
                         required
                     />
-                </label>
-                <br />
-                <label>
-                    Phone:
+                </div>
+                <div className="form-group">
+                    <label htmlFor="phone">Phone:</label>
                     <input
-                        type="tel"
+                        type="text"
+                        id="phone"
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
                         required
                     />
-                </label>
-                <br />
-                <label>
-                    Message:
+                </div>
+                <div className="form-group">
+                    <label htmlFor="message">Message:</label>
                     <textarea
+                        id="message"
                         name="message"
                         value={formData.message}
                         onChange={handleChange}
                         required
-                    />
-                </label>
-                <br />
-                <button type="submit">Submit</button>
+                    ></textarea>
+                </div>
+                <button type="submit" className="btn">Submit</button>
             </form>
         </div>
     );
 };
 
-export default ContactForm;
+export default Contact;

@@ -51,6 +51,7 @@ const Navbar = () => {
                 Join
               </NavLink>
             </li>
+            {/*
             <li className="nav__item">
               <NavLink
                 to="/contact"
@@ -60,9 +61,10 @@ const Navbar = () => {
                 Contact
               </NavLink>
             </li>
+            */}
             <li className="nav__item">
               <NavLink
-                to="/contactform"
+                to="/contact-form"
                 className="nav__link"
                 onClick={closeMenuOnMobile}
               >
