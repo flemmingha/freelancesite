@@ -16,22 +16,17 @@ import CookiePolicy from './Components/pages/CookiePolicy';
 
 const useGoogleAnalytics = (trackingId) => {
   useEffect(() => {
-    // Define dataLayer
     window.dataLayer = window.dataLayer || [];
-    
-    // Define gtag function
     function gtag() {
       dataLayer.push(arguments);
     }
     window.gtag = gtag;
 
-    // Load gtag.js script
     const scriptTag = document.createElement('script');
     scriptTag.async = true;
     scriptTag.src = `https://www.googletagmanager.com/gtag/js?id=${trackingId}`;
     document.head.appendChild(scriptTag);
 
-    // Set initial config for Google Analytics
     gtag('js', new Date());
     gtag('config', trackingId);
   }, [trackingId]);
@@ -45,8 +40,8 @@ const App = () => {
     const userCookie = Cookies.get('user');
 
     if (!userCookie) {
-      const newUserName = uuidv4(); // Generate a new UUID
-      Cookies.set('user', newUserName, { expires: 7 });
+      const newUserName = uuidv4();
+      Cookies.set('user', newUserName, { expires: 7, sameSite: 'Lax' }); // Set SameSite attribute
       setUserName(newUserName);
       console.log('Cookie set for the first time:', newUserName);
     } else {
