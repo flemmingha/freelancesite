@@ -58,7 +58,7 @@ const App = () => {
           {/*<Route path="/" element={<Temp />} />
           */}
           <Route path="/" element={<Home />} />
-          <Route path="/About" element={<About />} />
+          {/*<Route path="/About" element={<About />} /> */}
           <Route path="/Join" element={<Join />} />
           {/*<Route path="/Contact" element={<Contact />} /> */}
           <Route path="/cookie-policy" element={<CookiePolicy />} />
