@@ -1,5 +1,3 @@
-//ContactForm.js
-
 import React, { useState } from 'react';
 import axios from 'axios';
 import './ContactForm.css'; // Import the Contact CSS file
