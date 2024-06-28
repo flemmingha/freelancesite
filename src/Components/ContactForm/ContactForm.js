@@ -21,7 +21,7 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const baseURL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000';
+            const baseURL = process.env.REACT_APP_API_BASE_URL;
             const response = await axios.post(`${baseURL}/api/contact`, formData, {
                 headers: {
                     'Content-Type': 'application/json'
