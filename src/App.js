@@ -1,69 +1,59 @@
 import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Cookies from 'js-cookie';
-import { v4 as uuidv4 } from 'uuid'; // Import the UUID library
-import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./Components/Navbar/Navbar";
-//import Temp from "./Components/pages/Temp";
-import Home from "./Components/pages/Home";
-import About from "./Components/pages/About";
-import Join from "./Components/pages/Join";
-import Contact from "./Components/pages/Contact";
-import ContactForm from "./Components/ContactForm/ContactForm";
+import { v4 as uuidv4 } from 'uuid';
+import Navbar from './Components/Navbar/Navbar';
+import Home from './Components/pages/Home';
+import Join from './Components/pages/Join';
+import ContactForm from './Components/ContactForm/ContactForm';
 import CookieConsent from './Components/CookieConsent/CookieConsent';
 import CookiePolicy from './Components/pages/CookiePolicy';
 
-
-const useGoogleAnalytics = (trackingId) => {
-  useEffect(() => {
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    window.gtag = gtag;
-
-    const scriptTag = document.createElement('script');
-    scriptTag.async = true;
-    scriptTag.src = `https://www.googletagmanager.com/gtag/js?id=${trackingId}`;
-    document.head.appendChild(scriptTag);
-
-    gtag('js', new Date());
-    gtag('config', trackingId);
-  }, [trackingId]);
-};
-
 const App = () => {
-  useGoogleAnalytics('G-19DN8SNDPS');
   const [userName, setUserName] = useState('');
 
   useEffect(() => {
+    // Initialize Google Analytics
+    initializeGoogleAnalytics('G-19DN8SNDPS');
+
+    // Handle user cookies
+    handleUserCookies();
+  }, []);
+
+  const initializeGoogleAnalytics = (trackingId) => {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      window.dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', trackingId);
+  };
+
+  const handleUserCookies = () => {
     const userCookie = Cookies.get('user');
 
     if (!userCookie) {
       const newUserName = uuidv4();
-      Cookies.set('user', newUserName, { expires: 7, sameSite: 'Lax' }); // Set SameSite attribute
+      Cookies.set('user', newUserName, { expires: 7, sameSite: 'Lax' });
       setUserName(newUserName);
       console.log('Cookie set for the first time:', newUserName);
     } else {
       setUserName(userCookie);
       console.log('Cookie already exists:', userCookie);
     }
-  }, []);
+  };
 
   return (
     <Router>
-      <Navbar /> 
+      <Navbar />
       <main className="main-content">
         <Routes>
-          {/*<Route path="/" element={<Temp />} />
-          */}
           <Route path="/" element={<Home />} />
-          {/*<Route path="/About" element={<About />} /> */}
           <Route path="/Join" element={<Join />} />
-          {/*<Route path="/Contact" element={<Contact />} /> */}
           <Route path="/cookie-policy" element={<CookiePolicy />} />
-          <Route path="/contact-form" element={<ContactForm />} />          
-          {/* Define other routes that you need*/}
+          <Route path="/contact-form" element={<ContactForm />} />
+          {/* Define other routes that you need */}
         </Routes>
         <CookieConsent />
       </main>
