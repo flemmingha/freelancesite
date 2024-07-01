@@ -4,7 +4,15 @@ import './Home.css'; // Create a CSS file for styling
 const Home = () => {
   return (
     <div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <h1 id='SpectoConsultHelp'>Competencies</h1>
+        <br></br>
         <br></br>
         <h2>Main focus area is data-based solutions within IT and Pharma</h2>
         <div id="flexContainer">

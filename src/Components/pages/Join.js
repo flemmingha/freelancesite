@@ -4,6 +4,14 @@ import './Join.css'; // Create a CSS file for styling
 const Join = () => {
   return (
     <div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <h1 id='BizviewHelp'>Join</h1>
         <div id="flexContainer">
             <div className='box3'>

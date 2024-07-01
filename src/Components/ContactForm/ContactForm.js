@@ -36,7 +36,15 @@ const Contact = () => {
 
     return (
         <div className="contact-form-container">
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
             <h1>Contact Us</h1>
+            <br></br>
+            <p>We will get back to you as soon as possible</p>
+            <br></br>
             {successMessage && <p className="success-message">{successMessage}</p>}
             {errorMessage && <p className="error-message">{errorMessage}</p>}
             <form onSubmit={handleSubmit}>
