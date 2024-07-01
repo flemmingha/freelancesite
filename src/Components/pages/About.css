@@ -1,75 +1,69 @@
 #flexContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70px;
-    /* Default: side-by-side columns */
-  }
-  
-  .box2   {
-    /* border: 1px solid #ccc; */
-    margin-right: 10px;
-    flex-basis: 40vw;
-    background-color: var(--body-color);
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
 
-  h2,
-  p {
+/* Box styling */
+.box2 {
+  margin: 10px;
+  flex-basis: 40vw;
+  background-color: var(--body-color);
+  padding: 10px; /* Added padding for better spacing */
+}
+
+h2, p {
   color: var(--second-color);
   text-align: center;
+  margin: 10px 0; /* Added margin for better spacing */
+}
+
+/* Ensure long text breaks properly */
+p {
+  overflow-wrap: break-word;
+}
+
+#certifications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#SpectoConsultHelp {
+  margin-top: 1vw;
+  text-align: center;
+  color: var(--first-color);
+}
+
+/* Image styling */
+.imagecert {
+  max-width: 100%; /* Ensure image doesn't overflow */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px 0; /* Added margin for spacing */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 1100px) {
+  #flexContainer {
+    flex-direction: column; /* Stacks columns vertically on mobile */
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
   }
 
-  #certifications {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* margin-top: 70px; */
-    /* Default: side-by-side columns */
+  .box2 {
+    margin: 10px 10px 20px 10px; /* Adds side margins to the boxes */
+    width: calc(100% - 20px); /* Adjusts width to account for the side margins */
+    flex-grow: 1;
+    flex-basis: auto;
   }
 
   #SpectoConsultHelp {
     margin-top: 1vw;
     text-align: center;
     color: var(--first-color);
+    font-size: 5vw;
   }
-
-  .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 20px;
-    /* Optional: Add more styling for spacing, alignment, etc. */
-  }
-
-  .imagecert {
-    max-width: 30%;
-    /* max-height: 50px; */
-    height: 80px;
-    margin-right: 20px;
-  }
-
-   /* Media query for mobile devices */
-  @media (max-width: 1100px) {
-    #flexContainer {
-      flex-direction: column; /* Stacks columns vertically on mobile */
-      width: 100%;
-      justify-content: center;
-      width: 100%;
-      margin-top: 20px;
-    }    
-    .box2  {
-      margin-bottom: 20px;
-      width: 100%;
-      flex-grow: 1;
-      flex-basis: 400px;
-    }
-    #SpectoConsultHelp {
-      margin-top: 1vw;
-      text-align: center;
-      color: var(--first-color);
-      font-size: 5vw;
-    }
-
-  }
-  
+}

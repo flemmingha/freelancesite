@@ -4,6 +4,7 @@ import Cookies from 'js-cookie';
 import { v4 as uuidv4 } from 'uuid';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/pages/Home';
+import About from './Components/pages/About';
 import Join from './Components/pages/Join';
 import ContactForm from './Components/ContactForm/ContactForm';
 import CookieConsent from './Components/CookieConsent/CookieConsent';
@@ -50,6 +51,7 @@ const App = () => {
       <main className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
           <Route path="/Join" element={<Join />} />
           <Route path="/cookie-policy" element={<CookiePolicy />} />
           <Route path="/contact-form" element={<ContactForm />} />

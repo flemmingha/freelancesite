@@ -4,6 +4,13 @@ import './About.css'; // Create a CSS file for styling
 const About = () => {
   return (
     <div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <h1 id='SpectoConsultHelp'>About</h1>
         <div id="flexContainer">
             <div className='box2'>
@@ -29,7 +36,7 @@ const About = () => {
                     <br></br>
                     <ul>Azure Data Engineer Associate</ul>
                     <ul>Azure Data Science Associate</ul>
-                    <ul>PowerBI Data Analyst Associate</ul>
+                    <ul>Power BI Data Analyst Associate</ul>
                     <br></br>
                     <img className='imagecert' src={`${process.env.PUBLIC_URL}/AboutImages/snowflake-certified-snowprocore-badge.png`} alt="Snowflake SnowPro Core Badge Logo" />
                     <br></br>
