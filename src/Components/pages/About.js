@@ -11,12 +11,11 @@ const About = () => {
         <br></br>
         <br></br>
         <br></br>
-        <h1 id='SpectoConsultHelp'>About</h1>
+        <h1>About</h1>
         <div id="flexContainer">
             <div className='box2'>
               <div>
               <h2>Flemming Hein Andersen, Founder</h2>
-              <br></br>
               <br></br>
                 <p>Flemming is the founder of Specto Consult. He has previously worked for a range of pharmaceutical companies in Denmark and for various companies in Switzerland both as an employee and as a consultant. </p>
                 <br></br>
@@ -36,7 +35,7 @@ const About = () => {
                     <br></br>
                     <ul>Azure Data Engineer Associate</ul>
                     <ul>Azure Data Science Associate</ul>
-                    <ul>Power BI Data Analyst Associate</ul>
+                    <ul>PowerBI Data Analyst Associate</ul>
                     <br></br>
                     <img className='imagecert' src={`${process.env.PUBLIC_URL}/AboutImages/snowflake-certified-snowprocore-badge.png`} alt="Snowflake SnowPro Core Badge Logo" />
                     <br></br>
@@ -45,7 +44,6 @@ const About = () => {
             </div>
         </div>
     </div>
-
   );
 };
 

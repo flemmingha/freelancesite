@@ -19,7 +19,7 @@ h2, p {
   text-align: center;
 }
 
-#SpectoConsultHelp {
+#SpectoConsultHelp1 {
   margin-top: 1vw;
   text-align: center;
   color: var(--first-color);
@@ -62,7 +62,7 @@ h2, p {
     justify-content: center;
   }
 
-  #SpectoConsultHelp {
+  #SpectoConsultHelp1 {
     margin-top: 1vw;
     text-align: center;
     color: var(--first-color);

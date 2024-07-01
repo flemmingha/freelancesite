@@ -40,7 +40,6 @@ const Contact = () => {
             <br></br>
             <br></br>
             <br></br>
-            <br></br>
             <h1>Contact Us</h1>
             <br></br>
             <p>We will get back to you as soon as possible</p>

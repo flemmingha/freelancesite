@@ -5,21 +5,19 @@
   margin-top: 20px;
 }
 
-/* Box styling */
 .box2 {
   margin: 10px;
   flex-basis: 40vw;
   background-color: var(--body-color);
-  padding: 10px; /* Added padding for better spacing */
+  padding: 10px;
 }
 
 h2, p {
   color: var(--second-color);
   text-align: center;
-  margin: 10px 0; /* Added margin for better spacing */
+  margin: 10px 0;
 }
 
-/* Ensure long text breaks properly */
 p {
   overflow-wrap: break-word;
 }
@@ -35,27 +33,27 @@ p {
   margin-top: 1vw;
   text-align: center;
   color: var(--first-color);
+  font-size: var(--h1-font-size); /* Ensure base font size for larger screens */
 }
 
-/* Image styling */
 .imagecert {
-  max-width: 100%; /* Ensure image doesn't overflow */
-  height: auto; /* Maintain aspect ratio */
-  margin: 10px 0; /* Added margin for spacing */
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
 }
 
 /* Media query for mobile devices */
 @media (max-width: 1100px) {
   #flexContainer {
-    flex-direction: column; /* Stacks columns vertically on mobile */
+    flex-direction: column;
     width: 100%;
     justify-content: center;
     margin-top: 20px;
   }
 
   .box2 {
-    margin: 10px 10px 20px 10px; /* Adds side margins to the boxes */
-    width: calc(100% - 20px); /* Adjusts width to account for the side margins */
+    margin: 10px 10px 20px 10px;
+    width: calc(100% - 20px);
     flex-grow: 1;
     flex-basis: auto;
   }
@@ -64,6 +62,6 @@ p {
     margin-top: 1vw;
     text-align: center;
     color: var(--first-color);
-    font-size: 5vw;
+    font-size: 5vw; /* Adjust font size for mobile screens */
   }
 }

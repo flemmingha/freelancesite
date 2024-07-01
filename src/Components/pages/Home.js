@@ -11,7 +11,7 @@ const Home = () => {
         <br></br>
         <br></br>
         <br></br>
-        <h1 id='SpectoConsultHelp'>Competencies</h1>
+        <h1>Competencies</h1>
         <br></br>
         <br></br>
         <h2>Main focus area is data-based solutions within IT and Pharma</h2>

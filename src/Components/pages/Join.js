@@ -11,8 +11,7 @@ const Join = () => {
         <br></br>
         <br></br>
         <br></br>
-        <br></br>
-        <h1 id='BizviewHelp'>Join</h1>
+        <h1>Join</h1>
         <div id="flexContainer">
             <div className='box3'>
                   <h2>Become a part of the journey</h2>
