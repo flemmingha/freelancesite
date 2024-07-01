@@ -36,6 +36,40 @@ p {
   font-size: var(--h1-font-size); /* Ensure base font size for larger screens */
 }
 
+.personalimage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.personalimage {
+  height: 15vw; /* Adjust height as needed */
+  max-width: 100%; /* Ensure image doesn't exceed its container width */
+  display: block;
+  margin: auto; /* Center the image horizontally */
+  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+}
+
+.linkedin-text {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: white; /* Text color is now white */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s; /* Smooth transition */
+}
+
+.linkedin-text a {
+  color: white; /* Set link color to white */
+  text-decoration: underline; /* Optional: underline the link text */
+}
+
+.personalimage-container:hover .linkedin-text,
+.personalimage-container:focus-within .linkedin-text {
+  opacity: 1; /* Show text on hover or focus */
+}
+
 .imagecert {
   max-width: 100%;
   height: auto;
@@ -43,25 +77,8 @@ p {
 }
 
 /* Media query for mobile devices */
-@media (max-width: 1100px) {
-  #flexContainer {
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    margin-top: 20px;
-  }
-
-  .box2 {
-    margin: 10px 10px 20px 10px;
-    width: calc(100% - 20px);
-    flex-grow: 1;
-    flex-basis: auto;
-  }
-
-  #SpectoConsultHelp {
-    margin-top: 1vw;
-    text-align: center;
-    color: var(--first-color);
-    font-size: 5vw; /* Adjust font size for mobile screens */
+@media (max-width: 768px) {
+  .personalimage {
+    height: 200px; /* Adjust height for smaller screens */
   }
 }
