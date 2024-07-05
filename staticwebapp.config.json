@@ -8,7 +8,14 @@
     ],
     "navigationFallback": {
       "rewrite": "/index.html",
-      "exclude": ["/static/*", "/AboutImages/*", "/MainImages/*", "/css/*"]
+      "exclude": [
+        "/static/*",
+        "/AboutImages/*",
+        "/MainImages/*",
+        "/css/*",
+        "/js/*",
+        "/node_modules/*"
+      ]
     },
     "mimeTypes": {
       ".css": "text/css",
