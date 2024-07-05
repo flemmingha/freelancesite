@@ -12,7 +12,13 @@
     },
     "mimeTypes": {
       ".css": "text/css",
-      ".js": "application/javascript"
+      ".js": "application/javascript",
+      ".html": "text/html",
+      ".jpg": "image/jpeg",
+      ".png": "image/png",
+      ".svg": "image/svg+xml",
+      ".woff": "font/woff",
+      ".woff2": "font/woff2"
     }
   }
   
