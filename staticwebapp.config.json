@@ -1,14 +1,18 @@
 {
-    "navigationFallback": {
-      "rewrite": "/index.html",
-      "exclude": ["/images/*", "/css/*"]
-    },
     "routes": [
       { "route": "/About", "rewrite": "/index.html" },
       { "route": "/Join", "rewrite": "/index.html" },
       { "route": "/cookie-policy", "rewrite": "/index.html" },
       { "route": "/contact-form", "rewrite": "/index.html" },
       { "route": "/*", "rewrite": "/index.html" }
-    ]
+    ],
+    "navigationFallback": {
+      "rewrite": "/index.html",
+      "exclude": ["/AboutImages/*", "/MainImages/*"]
+    },
+    "mimeTypes": {
+      ".css": "text/css",
+      ".js": "application/javascript"
+    }
   }
   
