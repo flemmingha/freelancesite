@@ -30,7 +30,7 @@ const About = () => {
                 <br></br>
                 <p>He holds a M.Sc. in International Business & Finance from the University of Aarhus, a B.Sc. in Medicine with Industrial Specialization from the University of Aalborg and various certifications from Microsoft and Snowflake.</p>
                 <br></br>
-                <p>He has experience with data-based solutions within clinical study reporting, clinical operations, safety, pharmaceutical marketing and IT-security from Danish pharmaceutical companies.</p>
+                <p>He has experience with data-based solutions within clinical study reporting, clinical operations, safety, pharmaceutical marketing & sales and IT-security from Danish pharmaceutical companies.</p>
                 <br></br>
                 <br></br>
                 <br></br>
