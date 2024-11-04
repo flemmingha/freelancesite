@@ -48,6 +48,10 @@ const About = () => {
                 <img className='imagecert' src={`${process.env.PUBLIC_URL}/AboutImages/snowflake-certified-snowprocore-badge.png`} alt="Snowflake SnowPro Core Badge Logo" />
                 <br></br>
                 <ul>Snowflake SnowPro Core</ul>
+                <br></br>
+                <img className='imagecert' src={`${process.env.PUBLIC_URL}/AboutImages/formation-ITIL4-Foundation.png`} alt="ITIL4 Foundation Badge Logo" />
+                <br></br>
+                <ul>ITIL4 Foundation</ul>
               </div>
             </div>
         </div>
