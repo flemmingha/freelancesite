@@ -19,10 +19,10 @@ const Join = () => {
                   <br></br>
                   <p>Do you like consulting, data and pharma?</p>
                   <br></br>
-                  <p>Would you like to join a start-up consulting company which works in the intersection between IT and pharma?</p>
-                  <br></br>
                   <p>Then get in touch and let's have a chat</p>
                   <br></br>
+                  <p>Call at +45 20 89 40 86</p>
+                  <br></br>                  
                   <p></p>
             </div>
         </div>
