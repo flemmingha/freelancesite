@@ -40,7 +40,7 @@ const Contact = () => {
             <br></br>
             <br></br>
             <br></br>
-            <h1>Contact Us</h1>
+            <h1>Contact</h1>
             <br></br>
             <p>You can either call at +45 20 89 40 86 or use the form below</p>
             <br></br>
