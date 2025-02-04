@@ -50,7 +50,7 @@ const Home = () => {
                     <br></br>
                     <p>Clinical Systems</p>
                         <div className='row'>
-                            <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/ClinicalSystemsVeevaVaultRimLogo.png`} alt="Veeva Logo" />
+                            <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/ClinicalSystemsVeevaVaultLogo.png`} alt="Veeva Logo" />
                             <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/ClinicalSystemsOracleLogo.png`} alt="Oracle Logo" />
                             <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/ClinicalSystemsVeevaCRMLogo.png`} alt="Veeva CRM Logo" />
                         </div>
