@@ -48,7 +48,7 @@ const Home = () => {
                 <div className='box'>
                 <h2>Pharma</h2>
                     <br></br>
-                    <p>Clinical Systems</p>
+                    <p>Pharma IT Systems</p>
                         <div className='row'>
                             <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/ClinicalSystemsVeevaVaultLogo.png`} alt="Veeva Logo" />
                             <img className='image' src={`${process.env.PUBLIC_URL}/MainImages/ClinicalSystemsOracleLogo.png`} alt="Oracle Logo" />

@@ -32,6 +32,7 @@ const About = () => {
                 <br></br>
                 <p>He has experience with data-based solutions within clinical study reporting, clinical operations, safety, pharmaceutical marketing & sales and IT-security from Danish pharmaceutical companies.</p>
                 <br></br>
+                <p>He has experience with general BI and data engineering solutions from both Danish and Swiss companies.</p>
                 <br></br>
                 <br></br>
               </div>
